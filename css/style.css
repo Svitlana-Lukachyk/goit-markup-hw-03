@@ -43,6 +43,7 @@ ul,
 ol {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 img {
@@ -53,22 +54,12 @@ img {
 
 /* --------------header-------------------- */
 
-.section {
-    padding-bottom: 94px;
-}
-
 .container {
     margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
     width: 1200px;
     /* background: tomato; */
-}
-
-.list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
 }
 
 .link {
@@ -80,6 +71,7 @@ img {
     border-bottom: 1px solid #ECECEC;
 }
 .header-logo {
+    margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
     font-family: Raleway;
@@ -117,7 +109,6 @@ img {
 
 .menu-list {
     display: flex;
-    margin-left: 93px;
 }
 
 .menu-list .item:not(:last-child) {
@@ -163,10 +154,10 @@ img {
 
 /* ------------------hero------------------------- */
 
-.hero {
+.hero-section {
+    padding: 200px 0;
     background-color: var(--main-background-color);
     text-align: center;
-    height: 600px;
 }
 
 .centered {
@@ -176,7 +167,6 @@ img {
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
-    padding-top: 200px;
     margin-right: auto;
     margin-left: auto;
     width: 696px;
@@ -196,15 +186,12 @@ img {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.06em;
     background: #188CE8;
     color: #FFFFFF;
 }
 
 .hero-btn {
-    margin: 0 auto 200px auto;
     cursor: pointer;
 }
 
@@ -217,6 +204,11 @@ img {
 }
 
 /* --------------features---------------- */
+
+.features-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .features-list {
 display: flex;
@@ -251,6 +243,11 @@ margin-right: 30px;
 
 /* ----------about-us-------------- */
 
+.about-section {
+    padding-top: 0;
+    padding-bottom: 94px;
+}
+
 .about-us-list {
     display: flex;
     flex-wrap: wrap;
@@ -271,9 +268,14 @@ margin-right: 30px;
 
 /* ---------our-team--------------- */
 
+.our-team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #F5F4FA;
+}
+
 .our-team-list {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .our-team-title {
@@ -290,7 +292,7 @@ margin-right: 30px;
 }
 
 .our-team-description {
-    padding: 30px;
+    padding: 30px 0;
 }
 
 .our-team-name {
@@ -314,21 +316,14 @@ margin-right: 30px;
 
 .portfolio-section {
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .filter-list {
 display: flex;
 justify-content: center;
-margin-bottom: 34px;
-/* padding-bottom: 16px; */
+margin-bottom: 50px;
 }
-
-/* .filter-item {
-    padding-bottom: 16px;
-} */
-
-/* --не знаю як збільшити клікабельну зону кнопок на 16px донизу
-(у макеті стрілочка 16*16)----- */
 
 .filter-item:not(:last-child) {
 margin-right: 8px;
@@ -340,6 +335,7 @@ margin-right: 8px;
     min-width: 73px;
     background: #F5F4FA;
     border-radius: 4px;
+    border: transparent;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -413,12 +409,9 @@ margin-right: 8px;
 /* ------------footer-------------- */
 
 .footer {
-    background-color: var(--main-background-color);
-}
-
-.footer .container {
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: var(--main-background-color);
 }
 
 .footer-logo {
